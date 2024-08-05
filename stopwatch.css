@@ -1,0 +1,184 @@
+
+*
+{
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.vt323-regular {
+    
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+ section{
+     position: relative;
+     /* width: 100%; */
+     /* height: 100vh; */
+     display: flex;
+     justify-content: center;
+     /* align-items: center; */
+}
+
+.clock{
+    position: relative;
+    color: #f0c420;
+    font-size:9em;
+    font-family: "VT323", monospace;
+
+    font-weight: 100%;
+    margin-top: 12%;
+    margin-left: 40% ;
+    width: 900px;
+    height: 250px;
+    background-color: transparent ;
+     /* box-shadow: 0 15px 25px rgba(248, 245, 245, 0.1); */
+}
+#ampm{
+    font-size: 60px
+}
+.dots
+{
+    /* font-family: "IBM Plex Mono", monospace; */
+    /* font-family: "VT323", monospace; */
+    font-family: "Space Mono", monospace;
+    
+    font-weight: 3px;
+    justify-content: center;
+    /* font-hight:3px: */
+}
+
+
+
+
+/* moon img */
+.moon {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 18%;
+    bottom: 0;
+    right: 0;
+    left: 3%;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #000 inset, 0 0 20px #000;
+  }
+  
+  
+    
+    .moon::after {
+      position: absolute;
+      
+      content: "";
+      top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     border-color: rgb(246, 244, 244);
+     border-radius: 50%;
+     box-shadow: -40px -40px 50px 20px black inset ;
+    }
+  
+     .moon > div{  
+      width: 1000%;
+      height: 120%;
+      animation: spin 60s linear alternate infinite ;
+      /* background: url(../clock/colormap.jpg); */
+      
+      background: url(../clock/img/IMG_20240303_133727.jpg);
+      filter: brightness(150%);
+     
+     }
+  
+    @keyframes spin {
+  to{
+     transform: translateX(-50%);
+  }
+  
+    }
+
+    .stop-watch{
+      position: relative;
+      color: #f0c420;
+      font-size:7em;
+      font-family: "JetBrains Mono", monospace;
+  
+      font-weight: 100%;
+      margin-top: 11%;
+      margin-left: 40% ;
+      width: 900px;
+      height: 350px;
+      background-color: transparent ;
+    }
+    
+    .buttons{
+      font-size: 21px;
+margin-top: 42px;
+margin-left: 40%;
+
+    text-align: right;
+    /* padding: auto; */
+    
+    background-position: center;
+    }
+
+    
+
+/* Reset default button styles */
+button {
+
+  border-color: #f0c420;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 20px;
+  /* margin:0 px; */
+  font-family: "IBM Plex Mono", monospace;
+  
+  
+}
+
+/* Start button style */
+.start {
+  background-color: transparent;
+  color:white ;
+  
+  transition: background-color 0.3s ease;
+}
+
+.start:hover {
+  background-color: #f0c420;
+  color: black;
+}
+
+/* Stop button style */
+.stop {
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.stop:hover {
+  background-color: #f0c420;
+  color: black;
+}
+
+/* Reset button style */
+.reset {
+  background-color:transparent ;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.reset:hover {
+  background-color: #f0c420;
+  color: white;
+}
+
+
+

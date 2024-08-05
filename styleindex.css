@@ -1,0 +1,100 @@
+
+*
+{
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.vt323-regular {
+    
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+ section{
+   
+     display: flex;
+    
+}
+
+.clock{
+    position: relative;
+    color: #f0c420;
+    font-size:7em;
+    font-family: "JetBrains Mono", monospace;
+
+    font-weight: 100%;
+    margin-top: 12%;
+    margin-left: 40% ;
+    width: 900px;
+    height: 350px;
+    background-color: transparent ;
+     /* box-shadow: 0 15px 25px rgba(248, 245, 245, 0.1); */
+}
+#ampm{
+  position:absolute;
+  margin-top: 150px;
+  margin-right: 60%;
+    font-size: 60px
+}
+.dots
+{position:relative;
+    font-family: "JetBrains Mono", monospace;
+    
+    font-weight: 1px;
+    justify-content: center;
+    /* font-hight:3px: */
+}
+
+
+
+
+/* moon img */
+.moon {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 18%;
+    bottom: 0;
+    right: 0;
+    left: 3%;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #000 inset, 0 0 20px #000;
+  }
+  
+  
+    
+    .moon::after {
+      position: absolute;
+      
+      content: "";
+      top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     border-color: rgb(246, 244, 244);
+     border-radius: 50%;
+     box-shadow: -40px -40px 50px 2px black inset ;
+    }
+  
+     .moon > div{  
+      width: 1000%;
+      height: 120%;
+      animation: spin 40s linear alternate infinite;
+      /* background: url(../clock/colormap.jpg); */
+      
+      background: url(https://www.lroc.asu.edu/popular_downloads/WAC_HAPKE_E000N1800_76P.png);
+      filter: brightness(100%);
+     }
+  
+    @keyframes spin {
+  to{
+     transform: translateX(-40%);
+  }
+  
+    }
+    
