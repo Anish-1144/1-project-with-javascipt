@@ -87,7 +87,7 @@
       animation: spin 40s linear alternate infinite;
       /* background: url(../clock/colormap.jpg); */
       
-      background: url(https://www.lroc.asu.edu/popular_downloads/WAC_HAPKE_E000N1800_76P.png);
+      background: url(..clock/img/MOON.png);
       filter: brightness(100%);
      }
   
