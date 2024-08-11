@@ -87,7 +87,7 @@
       animation: spin 40s linear alternate infinite;
       /* background: url(../clock/colormap.jpg); */
       
-      background: url(..clock/img/MOON.png);
+      background: url(../clock/img/moon.png);
       filter: brightness(100%);
      }
   
