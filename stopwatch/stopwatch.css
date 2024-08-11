@@ -89,7 +89,7 @@
       animation: spin 60s linear alternate infinite ;
       /* background: url(../clock/colormap.jpg); */
       
-      background: url(../clock/img/IMG_20240303_133727.jpg);
+      background: url(../img/IMG_20240303_133727.jpg);
       filter: brightness(150%);
      
      }
